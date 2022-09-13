@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+/*Algemene opmaak: de opmaak die geldig is voor alle op mijn webpagina.*/
+body{
+    /*Background-image zorgt voor een achtergrondfoto op mijn pagina.
+    Als url geef ik het pad op waar de foto zich bevindt;*/
+    background-image: url('../images/achtergrond.jpg');
+
+    /* Het standaardlettertype is Calibri (of eventueel Arial)*/
+    /*Als calibri niet ondersteund wordt neemt hij automatisch Arial als dit weer niet kan neemt het programma een lettertype die schreefloos is.*/
+    font-family: 'Calibri, Arial, sans-serif';
+    /*De standaard punt groote is 16 px*/
+    font-size: 16px;
+    /*De tekst wordt standaard uitgevuld*/
+    /* justify = uitvullen*/
+    text-align: justify ;
+}
+
+/*De hashtag word gebruikt om een id aan te geven.*/
+#container{
+    /*Background-color zorgt voor een achtergrond kleur van de container.*/
+background-color: white;
+/*de px slaat op de top en auto slaat op de linker en rechter margin die automatisch worden aangepast.*/
+margin: 10px auto;
+/*De breedte word automatisch aangepast aan het scherm.*/
+width: 100%;
+/*De container mag maximaal een breedte hebben van 1 200 px*/
+max-width: 1200px;
+}
+/*De afbeelding in de banner moet gecentreerd staan.*/
+header img{
+    margin-left: auto;
+    margin-right: auto;
+    /*De image word gezien als een appart blok en word dus gescheiden van de tekst.*/
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+nav{
+    /*Er word een lijn onder de nav geplaats die solid is en 1 px dik.*/
+    border-bottom: rgb(201,201,201) solid 1px;
+/*Zorgt ervoor dat alles mooi onder elkaar staat.*/
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.item{
+    /*De id's item worden naast elkaar geplaatst.*/
+    float:left;
+
+    border: solid 1px rgb(201,201,201);
+    /*border-radius is voor afgeronde hoeken de bovenhoeken zijn 5 px de onderhoeken worden niet afgerond.*/
+    border-radius: 5px 5px 0px 0px;
+
+    font-size:21px;
+/*Zorgt voor plaats rondom elementen.*/
+    padding:2px 5px;
+
+    margin-bottom: -1px;
+
+    margin:0px 2px;
+    
+}
+
+/*Het a-element van de id's item worden aangesproken*/
+.item a{
+    /*Het lijntje onder de tekst word weg gelaten door text-decoration.*/
+    text-decoration:none;
+    color:black;
+}
+
+aside{
+    width: 25%;
+}
+
+main{
+    float: right;
+    width: 70%;
+}
+h1{
+    color:wheat;
+    text-align: center;
+}
+
+aside p{
+    background-color:wheat;
+    margin: 5px;
+    text-align: center;
+}
+
+table{
+    background-color: wheat;
+    text-align:center;
+}
+
+#hotelnaam{
+    text-align: left;
+}
+
+#optie{
+    text-align: center;
+}
+
+#prijs{
+    text-align:right;
+    border-bottom: solid 1px rgb(201,201,201);
+}
+
+
